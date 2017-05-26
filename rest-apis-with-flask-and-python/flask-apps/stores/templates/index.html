@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AJAX Request</title>
+</head>
+<body>
+  Hello, World!
+
+  <script>
+    function httpGetAsync(url, callback) {
+      var xmlHttp = new XMLHttpRequest();
+      xmlHttp.onreadystatechange = function() {
+        console.log(xmlHttp);
+        if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
+          callback(xmlHttp.responseText);
+        }
+      }
+      xmlHttp.open('GET', url, true);
+      xmlHttp.send(null);
+    }
+
+    httpGetAsync('http://localhost:5000/store', function(response) {
+      alert(response);
+    });
+  </script>
+</body>
+</html>
