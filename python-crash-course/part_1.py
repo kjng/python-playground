@@ -104,3 +104,35 @@ print('Hey, ' + guest_list[1] + ', you\'re still invited!')
 del guest_list[1]
 del guest_list[0]
 print(guest_list)
+
+# Seeing the World
+locations = ['Japan', 'South Korea', 'Australia', 'Iceland', 'England']
+print(locations)
+print(sorted(locations))
+print(locations)
+print(sorted(locations, reverse=True))
+locations.reverse()
+print(locations)
+locations.reverse()
+print(locations)
+locations.sort()
+print(locations)
+locations.sort(reverse=True)
+print(locations)
+
+# Dinner Guests
+print('I\'m inviting ' + str(len(guest_list)) + ' guests to dinner!')
+
+# Every Function
+languages = ['english', 'chinese', 'japanese', 'korean', 'spanish', 'german']
+print(languages)
+print(sorted(languages))
+print(sorted(languages, reverse=True))
+languages.reverse()
+print(languages)
+languages.reverse()
+print(languages)
+languages.sort(reverse=True)
+print(languages)
+languages.sort()
+print(languages)
