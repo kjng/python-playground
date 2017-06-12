@@ -327,3 +327,116 @@ for num in nums:
         print('3rd')
     else:
         print(str(num) + 'th')
+
+# Person
+person = {
+    'first_name': 'Peter',
+    'last_name': 'Cai',
+    'age': 23,
+    'city': 'Ewing'
+}
+print(person['first_name'])
+print(person['last_name'])
+print(person['age'])
+print(person['city'])
+
+# Favorite Numbers
+favorite_numbers = {
+    'kevin': 7,
+    'sharon': 88,
+    'mike': 6,
+    'peter': 42,
+    'dyrus': 17
+}
+for name, num in favorite_numbers.items():
+    print(name.title() + "'s favorite number is " + str(num) + '!')
+
+# Glossary
+glossary = {
+    'string': 'sequence of characters',
+    'list_comprehension': 'calculate values based on a list',
+    'python': 'programming language',
+    'dictionary': 'data structure for key value pairs',
+    'title': 'capitalizes a string',
+    'set': 'creates a list of unique elements from a list'
+}
+for word in glossary:
+    print(word + ":")
+    print("\t" + glossary[word])
+
+# Rivers
+rivers = {
+    'nile': 'egypt',
+    'mississippi': 'usa',
+    'yangtze': 'china'
+}
+for river, country in rivers.items():
+    if country == 'usa':
+        print("The " + river.title() + " runs through the USA.")
+    else:
+        print("The " + river.title() + " runs through " + country.title() + ".")
+
+# Polling
+poll_people = ['kevin', 'sharon', 'mike', 'peter', 'brian', 'yue']
+poll_results = {
+    'mike': 1,
+    'brian': 2
+}
+for name in poll_people:
+    if name in poll_results:
+        print('Thanks, ' + name.title() + ', for responding!')
+    else:
+        print(name.title() + ', please take the poll!')
+
+# People
+person_one = {
+    'first': 'kevin',
+    'last': 'jang',
+    'age': 23
+}
+person_two = {
+    'first': 'john',
+    'last': 'smith',
+    'age': 42
+}
+person_three = {
+    'first': 'jane',
+    'last': 'doe',
+    'age': 17
+}
+people = [person_one, person_two, person_three]
+for person in people:
+    print(person['first'], person['last'], person['age'])
+
+# Pets
+pets = [
+    {
+        'spot': {
+            'type': 'dog',
+            'owner': 'kevin'
+        }
+    },
+    {
+        'crawler': {
+            'type': 'snail',
+            'owner': 'john'
+        }
+    },
+    {
+        'hoppers': {
+            'type': 'rabbit',
+            'owner': 'jane'
+        }
+    }
+]
+for pet in pets:
+    print(pet)
+
+# Favorite Numbers
+favorite_numbers = {
+    'kevin': [7, 12, 18, 24],
+    'sharon': [88, 1, 65, 3],
+    'mike': [6, 8, 10, 12]
+}
+for person, numbers in favorite_numbers.items():
+    print(person.title() + "'s favorite numbers are: " + str(numbers))
