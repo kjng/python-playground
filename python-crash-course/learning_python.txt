@@ -1,0 +1,6 @@
+In Python, you can use different types
+In Python, you can save values into variables
+In Python, you can define functions
+In Python, you can model objects and concepts with classes
+In Python, you can open files
+In Python, you can do a lot!
