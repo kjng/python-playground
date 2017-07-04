@@ -15,12 +15,15 @@ def run_game():
   screen = pygame.display.set_mode((settings.screen_width, settings.screen_height))
 
   # Create ship
-  ship = Ship(screen)
+  ship = Ship(settings, screen)
 
   # Start the main loop of the game
   while True:
     # Handle keypresses and game events
-    gf.check_events()
+    gf.check_events(ship)
+
+    # Update ship position
+    ship.update()
 
     # Redraw screen
     gf.update_screen(settings, screen, ship)
