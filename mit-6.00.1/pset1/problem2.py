@@ -14,7 +14,8 @@ Number of times bob occurs is: 2
 s = 'azcbobobegghakl'
 
 numOfBobs = 0
-for i in range(len(s)):
+for i in range(len(s) - 2):
+    print(s[i:i+3])
     if s[i:i+3] == 'bob':
         numOfBobs += 1
 print('Number of times bob occurs is: ' + str(numOfBobs))
