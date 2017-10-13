@@ -28,4 +28,3 @@ for c in s[1:]:
     else:
         currentRun = c
 print('Longest substring in alphabetical order is: ' + longestRun)
-
